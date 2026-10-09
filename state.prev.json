@@ -21,12 +21,12 @@
       "aspiration": "ogaAtTheTop"
     },
     "needs": {
-      "hunger": 83.19844668090722,
-      "energy": 77.20118934515352,
-      "hygiene": 69.03616336359879,
-      "bladder": 83.63222234804883,
-      "fun": 72.56706443959573,
-      "social": 72.79683731583201
+      "hunger": 80.38012125058947,
+      "energy": 75.15149812310426,
+      "hygiene": 67.24268354430562,
+      "bladder": 80.04526270946258,
+      "fun": 70.26116181479023,
+      "social": 71.25956889929508
     },
     "skills": {
       "cooking": 1.5290180116069267,
@@ -39,10 +39,10 @@
       "comedy": 10,
       "photography": 0
     },
-    "money": 500096750,
+    "money": 400096750,
     "blessings": 60,
     "rewards": [],
-    "time": 1459116.0669516684,
+    "time": 1459146.812319999,
     "speed": 1,
     "home": "lekki",
     "objects": [
@@ -574,7 +574,7 @@
       }
     ],
     "freeWill": true,
-    "idleMinutes": 2.2453483359422535,
+    "idleMinutes": 0.7617433308623731,
     "sound": true,
     "music": false,
     "stats": {
@@ -643,8 +643,8 @@
     "gifts": [
       "gift-2026-10-04"
     ],
-    "healthHour": 24318,
-    "neglect": 5,
+    "healthHour": 24319,
+    "neglect": 4,
     "family": {
       "paid": {},
       "baes": {},
@@ -706,9 +706,9 @@
     ],
     "suggestAt": 1791002548508,
     "risk": {
-      "homeAt": 1459080.273675,
-      "carsAt": 1459080.273675,
-      "home": 99.70921057341232,
+      "homeAt": 1459141.0669516684,
+      "carsAt": 1459141.0669516684,
+      "home": 99.68508625727411,
       "cars": {}
     },
     "skillUsed": {
@@ -864,6 +864,6 @@
       ]
     }
   },
-  "updatedAt": 1791525551488,
-  "now": 1791525551747
+  "updatedAt": 1791526123575,
+  "now": 1791526127861
 }
