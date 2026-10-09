@@ -1,2 +1,0 @@
-# Netscape HTTP Cookie File
-#HttpOnly_lagoslife.app	FALSE	/	TRUE	1796723089	ll_session	0e5113ae332fbafaa799bdde7aedbe15492419b676998d2624118982328c5fd4

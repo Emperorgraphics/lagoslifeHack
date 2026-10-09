@@ -1,1 +1,0 @@
-curl.exe -c cookies.txt -X POST "https://lagoslife.app/api/auth/login" -H "Content-Type: application/json" -d '{"username":"USERNAME","password":"YOUR_PASSWORD"}'
