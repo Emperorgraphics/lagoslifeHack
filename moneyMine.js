@@ -3,6 +3,7 @@ const fs = require("fs");
 const URL_SAVE = "https://lagoslife.app/api/save";
 const ADD = 200_000;
 const INTERVAL_MS = 10_000;
+const COOLDOWN_MS = 15 * 60 * 1000;
 
 function loadCookies(file, host = "lagoslife.app") {
   return fs.readFileSync(file, "utf8")
@@ -29,8 +30,8 @@ let wake = null;
 process.on("SIGINT", () => {
   if (stopping) process.exit(1); // second Ctrl+C forces exit
   stopping = true;
-  console.log("\nStopping after the current tick...");
-  if (wake) wake(); // cut the sleep short
+  console.log("\nStopping...");
+  if (wake) wake(); // cut any sleep short
 });
 
 const sleep = ms => new Promise(res => {
@@ -39,7 +40,6 @@ const sleep = ms => new Promise(res => {
 });
 
 async function tick(n) {
-  // GET current state
   const getRes = await fetch(URL_SAVE, { headers });
   if (!getRes.ok) throw new Error(`GET ${getRes.status}`);
   const save = await getRes.json();
@@ -47,7 +47,6 @@ async function tick(n) {
   const before = save.game.money;
   save.game.money = before + ADD;
 
-  // PUT { game, base }
   const putRes = await fetch(URL_SAVE, {
     method: "PUT",
     headers,
@@ -55,7 +54,6 @@ async function tick(n) {
   });
   if (!putRes.ok) throw new Error(`PUT ${putRes.status} ${(await putRes.text()).slice(0, 200)}`);
 
-  // GET again, save what the server actually holds
   const verifyRes = await fetch(URL_SAVE, { headers });
   if (!verifyRes.ok) throw new Error(`Verify GET ${verifyRes.status}`);
   const fresh = await verifyRes.json();
@@ -67,12 +65,16 @@ async function tick(n) {
 (async () => {
   let n = 1;
   while (!stopping) {
+    let failed = false;
     try {
       await tick(n++);
     } catch (e) {
-      console.error("Tick failed:", e.message); // keep going, retry next tick
+      failed = true;
+      const resumeAt = new Date(Date.now() + COOLDOWN_MS).toLocaleTimeString();
+      console.error(`Tick failed: ${e.message}`);
+      console.error(`Cooling down 15 min, resuming at ${resumeAt}`);
     }
-    if (!stopping) await sleep(INTERVAL_MS);
+    if (!stopping) await sleep(failed ? COOLDOWN_MS : INTERVAL_MS);
   }
   console.log("Stopped. Last server state is in state.json.");
 })();
