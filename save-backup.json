@@ -1,0 +1,869 @@
+{
+  "game": {
+    "version": 1,
+    "phase": "play",
+    "sim": {
+      "name": "kayoskay",
+      "appearance": {
+        "body": "f",
+        "style": "casual",
+        "skin": "#c68a62",
+        "hair": "default",
+        "hairColor": "#15110e",
+        "outfit": "plain",
+        "top": "#f59e42",
+        "bottom": "#1d2433"
+      },
+      "traits": [
+        "hustler",
+        "foodie"
+      ],
+      "aspiration": "ogaAtTheTop"
+    },
+    "needs": {
+      "hunger": 83.59402669494065,
+      "energy": 77.48888390081414,
+      "hygiene": 69.287896099802,
+      "bladder": 84.13568782045506,
+      "fun": 72.89072081471396,
+      "social": 73.0126082325776
+    },
+    "skills": {
+      "cooking": 1.5290180116069267,
+      "charisma": 10,
+      "fitness": 2.680165435739368,
+      "coding": 10,
+      "music": 0,
+      "hustle": 2,
+      "dance": 6,
+      "comedy": 10,
+      "photography": 0
+    },
+    "money": 499996750,
+    "blessings": 31,
+    "rewards": [],
+    "time": 1459111.7515333334,
+    "speed": 1,
+    "home": "lekki",
+    "objects": [
+      {
+        "uid": "ybnsyhfz",
+        "type": "vono",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "uid": "ejd37ejb",
+        "type": "radio",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "uid": "q3dvpd5p",
+        "type": "calendar",
+        "x": -1,
+        "y": 2
+      },
+      {
+        "uid": "t082ltwy",
+        "type": "plant",
+        "x": 6,
+        "y": 0
+      },
+      {
+        "uid": "efo9cezr",
+        "type": "chair",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "uid": "sbohjs58",
+        "type": "sofa",
+        "x": 1,
+        "y": 6,
+        "rot": 2
+      },
+      {
+        "uid": "cyyo6k8k",
+        "type": "tv",
+        "x": 1,
+        "y": 4,
+        "rot": 0
+      },
+      {
+        "uid": "i4dqdqvr",
+        "type": "laptop",
+        "x": 3,
+        "y": 0,
+        "rot": 0
+      },
+      {
+        "uid": "dbfwovte",
+        "type": "bathtub",
+        "x": 7,
+        "y": 9,
+        "rot": 0
+      },
+      {
+        "uid": "135lt7ng",
+        "type": "toilet",
+        "x": 9,
+        "y": 6,
+        "rot": 0
+      },
+      {
+        "uid": "i9dw06jn",
+        "type": "counter",
+        "x": 7,
+        "y": 5,
+        "rot": 2
+      },
+      {
+        "uid": "564r93up",
+        "type": "sink",
+        "x": 8,
+        "y": 5,
+        "rot": 2
+      },
+      {
+        "uid": "93asba5c",
+        "type": "gasCooker",
+        "x": 9,
+        "y": 5,
+        "rot": 0
+      },
+      {
+        "uid": "gajth5tq",
+        "type": "fridge",
+        "x": 9,
+        "y": 0,
+        "rot": 0
+      },
+      {
+        "uid": "mz1ea0pk",
+        "type": "dumbbells",
+        "x": 4,
+        "y": 9,
+        "rot": 0
+      }
+    ],
+    "layoutV": 1,
+    "salonFixed": true,
+    "queue": [],
+    "pos": {
+      "x": 4,
+      "y": 8
+    },
+    "path": [],
+    "facing": -1,
+    "location": "home",
+    "travel": null,
+    "work": null,
+    "job": {
+      "career": "banking",
+      "level": 8,
+      "performance": 50,
+      "daysWorked": 0,
+      "lastWorkedDay": -1,
+      "missedCheckDay": 1008,
+      "reminderDay": -1,
+      "promoBlockedDay": -1,
+      "grade": 3,
+      "gradeAt": 0,
+      "rankDay": 1011
+    },
+    "relationships": {},
+    "romance": null,
+    "moodlets": [
+      {
+        "id": "goodDeed",
+        "label": "Good Deed",
+        "emoji": "💛",
+        "value": 15,
+        "desc": "You helped family. Blessings loading.",
+        "expiresAt": 1459542.474319999
+      },
+      {
+        "id": "comfyRide",
+        "label": "AC Ride",
+        "emoji": "😌",
+        "value": 8,
+        "desc": "Cold AC, soft seat, no conductor.",
+        "expiresAt": 1459190.7885199992
+      },
+      {
+        "id": "fresh",
+        "label": "Fresh & Clean",
+        "emoji": "✨",
+        "value": 10,
+        "desc": "Nothing beats a good bath.",
+        "expiresAt": 1459311.0208333333
+      },
+      {
+        "id": "bae",
+        "label": "In Love",
+        "emoji": "💘",
+        "value": 25,
+        "desc": "You have a Bae now!",
+        "expiresAt": 1460511.1885883342
+      },
+      {
+        "id": "belleFull",
+        "label": "Belle Full",
+        "emoji": "🤤",
+        "value": 15,
+        "desc": "That food was sweet die.",
+        "expiresAt": 1459314.2577716676
+      },
+      {
+        "id": "pumped",
+        "label": "Pumped!",
+        "emoji": "💪",
+        "value": 10,
+        "desc": "Endorphins dey flow.",
+        "expiresAt": 1459271.1556783326
+      },
+      {
+        "id": "dyn:softlife",
+        "label": "Soft Life",
+        "emoji": "🥂",
+        "value": 10,
+        "desc": "Money dey. Enjoyment dey. Life is sweet.",
+        "expiresAt": null
+      },
+      {
+        "id": "dyn:fine",
+        "label": "Fine House",
+        "emoji": "🏡",
+        "value": 10.5,
+        "desc": "Your place is looking good.",
+        "expiresAt": null
+      }
+    ],
+    "power": true,
+    "powerChangeAt": 1459727.758278987,
+    "fuel": 0,
+    "weather": "cloudy",
+    "rentOwed": 0,
+    "lastRentDay": 1008,
+    "wishes": [
+      {
+        "id": "8uycwpzp",
+        "title": "Visit Elegushi Beach",
+        "emoji": "🏖️",
+        "reward": 3,
+        "goal": {
+          "kind": "visit",
+          "loc": "elegushi"
+        },
+        "progress": 0
+      },
+      {
+        "id": "9di6z894",
+        "title": "See art at Freedom Park",
+        "emoji": "🎭",
+        "reward": 3,
+        "goal": {
+          "kind": "visit",
+          "loc": "freedomPark"
+        },
+        "progress": 0
+      },
+      {
+        "id": "ltnblarp",
+        "title": "Play some music",
+        "emoji": "🎶",
+        "reward": 2,
+        "goal": {
+          "kind": "action",
+          "tag": "music",
+          "count": 2
+        },
+        "progress": 0
+      }
+    ],
+    "wishSeed": 1,
+    "events": [],
+    "lastEventCheck": 1012,
+    "notices": [
+      {
+        "id": "mkmzjh82",
+        "text": "Wish done: Work out twice (+3 ✨)",
+        "emoji": "🌟",
+        "at": 1459091.1556783326,
+        "tone": "good"
+      },
+      {
+        "id": "cszlr7h7",
+        "text": "Fitness skill up! Now level 2",
+        "emoji": "📈",
+        "at": 1459091.0257033326,
+        "tone": "good"
+      },
+      {
+        "id": "bckhks5b",
+        "text": "Mission done: Get your body moving. Claim your reward 🎯",
+        "emoji": "💪🏾",
+        "at": 1459090.976031665,
+        "tone": "good"
+      },
+      {
+        "id": "xlbjxak3",
+        "text": "Fitness skill up! Now level 1",
+        "emoji": "📈",
+        "at": 1459090.8879733316,
+        "tone": "good"
+      },
+      {
+        "id": "k55w451w",
+        "text": "Bought Dumbbell Rack",
+        "emoji": "🏋️",
+        "at": 1459090.4721699993,
+        "tone": "good"
+      },
+      {
+        "id": "fwqvcld7",
+        "text": "Energy is getting low!",
+        "emoji": "⚡",
+        "at": 1459077.1321466675,
+        "tone": "bad",
+        "need": "energy"
+      },
+      {
+        "id": "4uoerh4l",
+        "text": "Goal complete: Buy something new · +₦1,000 +1 ✨",
+        "emoji": "🎯",
+        "at": 1459074.2770016682,
+        "tone": "good"
+      },
+      {
+        "id": "dr2y9ag8",
+        "text": "Goal complete: Get a job · +₦1,000 +1 ✨",
+        "emoji": "🎯",
+        "at": 1459074.270638334,
+        "tone": "good"
+      },
+      {
+        "id": "gvjd6a5u",
+        "text": "Goal complete: Freshen up · +₦500 +1 ✨",
+        "emoji": "🎯",
+        "at": 1459074.2642366658,
+        "tone": "good"
+      },
+      {
+        "id": "12blyvf1",
+        "text": "Goal complete: Eat something · +₦500 +1 ✨",
+        "emoji": "🎯",
+        "at": 1459074.2577716676,
+        "tone": "good"
+      },
+      {
+        "id": "x8sc07uj",
+        "text": "Cooking skill up! Now level 1",
+        "emoji": "📈",
+        "at": 1459074.2029699993,
+        "tone": "good"
+      },
+      {
+        "id": "bu5dfg54",
+        "text": "@fisibabs sent you ₦150,000,000 💸",
+        "emoji": "💸",
+        "at": 1459071.1885883342,
+        "tone": "good"
+      },
+      {
+        "id": "lpah9ve0",
+        "text": "Home sweet home",
+        "emoji": "🏠",
+        "at": 1459070.7885199992,
+        "tone": "info"
+      },
+      {
+        "id": "4726lubw",
+        "text": "Your cousin is praying for you nonstop. +1 ✨",
+        "emoji": "💛",
+        "at": 1459062.474319999,
+        "tone": "good"
+      },
+      {
+        "id": "hpdktcbg",
+        "text": "@fisibabs sent you ₦250,000,000 💸",
+        "emoji": "💸",
+        "at": 1459062.474319999,
+        "tone": "good"
+      },
+      {
+        "id": "r4dh6ewd",
+        "text": "@fisibabs sent you ₦100,000,000 💸",
+        "emoji": "💸",
+        "at": 1459062.474319999,
+        "tone": "good"
+      },
+      {
+        "id": "ukl2onb4",
+        "text": "Omo-onile showed up at your Imota, Ikorodu land asking for \"foundation money\" 😤 You paid ₦25,000 to keep the peace.",
+        "emoji": "🧱",
+        "at": 1455881.9670483316,
+        "tone": "bad"
+      },
+      {
+        "id": "p8jeiwkh",
+        "text": "You now own a quarter plot in Imota, Ikorodu 🌱 Landlord loading…",
+        "emoji": "📜",
+        "at": 1455881.9670483316,
+        "tone": "good"
+      },
+      {
+        "id": "lowqq7ev",
+        "text": "@fisibabs sent you ₦10,000,000,000 💸",
+        "emoji": "💸",
+        "at": 1455881.4955516683,
+        "tone": "good"
+      },
+      {
+        "id": "z3bkfzur",
+        "text": "Hygiene is getting low!",
+        "emoji": "🫧",
+        "at": 1455841.4788966675,
+        "tone": "bad",
+        "need": "hygiene"
+      },
+      {
+        "id": "5ylrtjak",
+        "text": "Hunger is getting low!",
+        "emoji": "🍛",
+        "at": 1455841.4788966675,
+        "tone": "bad",
+        "need": "hunger"
+      },
+      {
+        "id": "isnuqtbq",
+        "text": "Hunger is getting low!",
+        "emoji": "🍛",
+        "at": 1455816.4788966675,
+        "tone": "bad",
+        "need": "hunger"
+      },
+      {
+        "id": "735971j2",
+        "text": "Hygiene is getting low!",
+        "emoji": "🫧",
+        "at": 1455801.4788966675,
+        "tone": "bad",
+        "need": "hygiene"
+      },
+      {
+        "id": "krub449e",
+        "text": "Accident! Couldn't hold it in… 😳",
+        "emoji": "💦",
+        "at": 1455801.4788966675,
+        "tone": "bad"
+      },
+      {
+        "id": "o9643oku",
+        "text": "Bladder is getting low!",
+        "emoji": "🚽",
+        "at": 1455631.4788966675,
+        "tone": "bad",
+        "need": "bladder"
+      },
+      {
+        "id": "rvufjvt8",
+        "text": "@adesunny paid your bail 💸 You're free to go! Say thank you o 🙏🏾",
+        "emoji": "🚓",
+        "at": 1452628.5891550009,
+        "tone": "good"
+      },
+      {
+        "id": "5bnwiwu0",
+        "text": "The officer caught you halfway out the window 😭 +20 minutes in the cell. Out at 7:25 PM",
+        "emoji": "👮🏾",
+        "at": 1452627.773819999,
+        "tone": "bad"
+      },
+      {
+        "id": "iyc3e050",
+        "text": "38 minutes in the cell for robbery. Out at 7:05 PM 🔒 Pay bail any time to leave early",
+        "emoji": "🔒",
+        "at": 1452627.1824600017,
+        "tone": "bad"
+      },
+      {
+        "id": "gmr03dln",
+        "text": "An investor wrote a ₦100,000 cheque! Your startup is FUNDED 🚀",
+        "emoji": "🚀",
+        "at": 1452626.517093335,
+        "tone": "good"
+      },
+      {
+        "id": "sz4m02ke",
+        "text": "Your team won the Agritech track! 🏆",
+        "emoji": "🏆",
+        "at": 1452626.2958149984,
+        "tone": "good"
+      },
+      {
+        "id": "wbaj2m9j",
+        "text": "+₦5,000 hackathon prize",
+        "emoji": "💸",
+        "at": 1452626.2958149984,
+        "tone": "good"
+      },
+      {
+        "id": "sb12qpzd",
+        "text": "Charisma skill up! Now level 10",
+        "emoji": "📈",
+        "at": 1452625.4255949992,
+        "tone": "good"
+      },
+      {
+        "id": "fmi9gy12",
+        "text": "Charisma skill up! Now level 9",
+        "emoji": "📈",
+        "at": 1452623.8763983317,
+        "tone": "good"
+      },
+      {
+        "id": "28ujjl5e",
+        "text": "Charisma skill up! Now level 8",
+        "emoji": "📈",
+        "at": 1452622.4746716674,
+        "tone": "good"
+      },
+      {
+        "id": "3it5ushl",
+        "text": "Queue full — cancel something first",
+        "emoji": "✋",
+        "at": 1452621.2216850016,
+        "tone": "info"
+      },
+      {
+        "id": "7iufilzc",
+        "text": "Charisma skill up! Now level 7",
+        "emoji": "📈",
+        "at": 1452621.1671550008,
+        "tone": "good"
+      },
+      {
+        "id": "rro51z6a",
+        "text": "Queue full — cancel something first",
+        "emoji": "✋",
+        "at": 1452620.1715333334,
+        "tone": "info"
+      },
+      {
+        "id": "33o163x6",
+        "text": "Queue full — cancel something first",
+        "emoji": "✋",
+        "at": 1452620.1421216675,
+        "tone": "info"
+      },
+      {
+        "id": "8lmj6xm3",
+        "text": "Charisma skill up! Now level 6",
+        "emoji": "📈",
+        "at": 1452620.0546216674,
+        "tone": "good"
+      },
+      {
+        "id": "ybbhjxcy",
+        "text": "Queue full — cancel something first",
+        "emoji": "✋",
+        "at": 1452619.95525,
+        "tone": "info"
+      }
+    ],
+    "freeWill": true,
+    "idleMinutes": 0.9366949992254376,
+    "sound": true,
+    "music": false,
+    "stats": {
+      "earnedToday": 0,
+      "earnedTotal": 107500,
+      "socials": 2,
+      "dayStarted": 1008,
+      "actionsDone": {
+        "sideProject": 4,
+        "freelanceGig": 1,
+        "cellClean": 6,
+        "cellFood": 1,
+        "cellToilet": 1,
+        "cellSleep": 1,
+        "giveTestimony": 14,
+        "code": 1,
+        "football": 1,
+        "soak": 2,
+        "newsTv": 60,
+        "hackathon": 1,
+        "pitch": 1,
+        "cookJollof": 1,
+        "sleepVono": 1,
+        "workout": 2
+      },
+      "visited": [
+        "yabaHub",
+        "balogun",
+        "church",
+        "polanco",
+        "ekoHotel"
+      ],
+      "aspirationDone": true,
+      "funded": true,
+      "bought": 10
+    },
+    "goal": 4,
+    "warned": {
+      "hunger": false,
+      "fun": false,
+      "social": false,
+      "hygiene": false,
+      "bladder": false,
+      "energy": false
+    },
+    "tutorialStep": 0,
+    "lastMode": "ride",
+    "pantry": {
+      "rice": 1,
+      "gino": 1,
+      "maggi": 5,
+      "oil": 3,
+      "garri": 4,
+      "sugar": 5,
+      "indomie": 3,
+      "egg": 6,
+      "bread": 2,
+      "zobo": 1,
+      "plantain": 2
+    },
+    "outbox": {
+      "notices": [],
+      "fx": []
+    },
+    "origin": "lapo",
+    "gifts": [
+      "gift-2026-10-04"
+    ],
+    "healthHour": 24318,
+    "neglect": 5,
+    "family": {
+      "paid": {},
+      "baes": {},
+      "kids": 0,
+      "received": [
+        "61ad9efc205f43738fc6",
+        "9de394c76cbc4b1189de",
+        "c9ff39e9f2d84b16baad",
+        "6884203f2c5f41ecb413",
+        "666e9b4fc6114a9fa12b"
+      ],
+      "sent": [
+        "6d0590436b53460684aa",
+        "ba7543d0ffd84d73ad00",
+        "34e8ce96c1784c0dbbf1"
+      ]
+    },
+    "gigRest": {
+      "atmHack": 1452960,
+      "hackathon": 1452960,
+      "pitch": 1452960
+    },
+    "tax": {
+      "week": 1002,
+      "earned": 107500,
+      "paid": 0
+    },
+    "record": 2,
+    "unblockV": 1,
+    "rentPaidUntil": 1022,
+    "storage": [
+      "bucket",
+      "waterDrum"
+    ],
+    "cars": [],
+    "car": false,
+    "rentCut": true,
+    "efccWatch": {
+      "day": 1012,
+      "worth": 313494,
+      "money": 0,
+      "earned": 107500,
+      "topped": 0,
+      "got": 500000000,
+      "sent": 0
+    },
+    "policy": {
+      "id": "food",
+      "gov": "Franka",
+      "until": 1791745200000
+    },
+    "land": [
+      {
+        "uid": "oyss95v3",
+        "id": "imota",
+        "boughtAt": 1455881.9670483316,
+        "paid": 2500000
+      }
+    ],
+    "suggestAt": 1791002548508,
+    "risk": {
+      "homeAt": 1459080.273675,
+      "carsAt": 1459080.273675,
+      "home": 99.70921057341232,
+      "cars": {}
+    },
+    "skillUsed": {
+      "cooking": 1013,
+      "charisma": 1013,
+      "fitness": 1013,
+      "coding": 1013,
+      "music": 1013,
+      "hustle": 1013,
+      "dance": 1013,
+      "comedy": 1013,
+      "photography": 1013
+    },
+    "skillBest": {
+      "cooking": 1.5290180116069267,
+      "charisma": 10,
+      "fitness": 2.680165435739368,
+      "coding": 10,
+      "music": 0,
+      "hustle": 2,
+      "dance": 4,
+      "comedy": 0,
+      "photography": 0
+    },
+    "skillFaded": 1013,
+    "ledger": [
+      {
+        "id": "z35i5u1l",
+        "k": "srv.transfer",
+        "a": 100000000,
+        "t": 1791520951195,
+        "r": "c9ff39e9f2d84b16baad"
+      },
+      {
+        "id": "1jshd404w",
+        "k": "srv.transfer",
+        "a": 250000000,
+        "t": 1791520951196,
+        "r": "6884203f2c5f41ecb413"
+      },
+      {
+        "id": "sfwyiib3",
+        "k": "event.cost",
+        "a": -2000,
+        "t": 1791520959677,
+        "r": "blackTax"
+      },
+      {
+        "id": "e415tcaj",
+        "k": "travel.trip",
+        "a": -450,
+        "t": 1791521416958,
+        "r": "ride:ekoHotel"
+      },
+      {
+        "id": "153p8yn7h",
+        "k": "travel.trip",
+        "a": -400,
+        "t": 1791521444492,
+        "r": "ride:home"
+      },
+      {
+        "id": "10cgyugut",
+        "k": "srv.transfer",
+        "a": 150000000,
+        "t": 1791521471330,
+        "r": "666e9b4fc6114a9fa12b"
+      },
+      {
+        "id": "1j9n454t5",
+        "k": "goal.reward",
+        "a": 500,
+        "t": 1791521655471,
+        "r": "0"
+      },
+      {
+        "id": "ck25vjou",
+        "k": "goal.reward",
+        "a": 500,
+        "t": 1791521655855,
+        "r": "1"
+      },
+      {
+        "id": "mrw2syh6",
+        "k": "goal.reward",
+        "a": 1000,
+        "t": 1791521656239,
+        "r": "2"
+      },
+      {
+        "id": "17w39nw0h",
+        "k": "goal.reward",
+        "a": 1000,
+        "t": 1791521656621,
+        "r": "3"
+      },
+      {
+        "id": "u36neydv",
+        "k": "buy.object",
+        "a": -3400,
+        "t": 1791522629316,
+        "r": "dumbbells"
+      }
+    ],
+    "missions": {
+      "day": 1013,
+      "list": [
+        {
+          "id": "yiw6cigr",
+          "tier": "easy",
+          "title": "Get your body moving",
+          "emoji": "💪🏾",
+          "hint": "Work out at home or at a gym",
+          "goal": {
+            "kind": "tag",
+            "tag": "workout",
+            "count": 1
+          },
+          "progress": 1,
+          "done": true
+        },
+        {
+          "id": "h5ywm3w3",
+          "tier": "city",
+          "title": "Take public transport twice",
+          "emoji": "🛺",
+          "hint": "Danfo, okada or keke",
+          "goal": {
+            "kind": "ride",
+            "modes": [
+              "danfo",
+              "okada",
+              "keke",
+              "bus"
+            ],
+            "count": 2
+          },
+          "progress": 0
+        },
+        {
+          "id": "n08azksv",
+          "tier": "hustle",
+          "title": "Hustle at the market",
+          "emoji": "🧺",
+          "hint": "Balogun, Wuse, Mile One",
+          "goal": {
+            "kind": "tag",
+            "tag": "hustle",
+            "count": 1
+          },
+          "progress": 0
+        }
+      ]
+    }
+  },
+  "updatedAt": 1791523905625,
+  "now": 1791523907106
+}
