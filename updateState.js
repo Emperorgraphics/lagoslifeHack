@@ -14,38 +14,109 @@ function loadCookies(file, host = "lagoslife.app") {
 }
 
 (async () => {
+  const cookies = loadCookies("cookies.txt");
+
+  if (!cookies) {
+    throw new Error("No matching cookies found in cookies.txt");
+  }
+
   const headers = {
-    Cookie: loadCookies("cookies.txt"),
+    Cookie: cookies,
     "Content-Type": "application/json",
     Origin: "https://lagoslife.app",
     Referer: "https://lagoslife.app/",
-    "User-Agent": "Mozilla/5.0 (Linux; Android 14) Chrome/124 Mobile Safari/537.36",
+    "User-Agent":
+      "Mozilla/5.0 (Linux; Android 14) Chrome/124 Mobile Safari/537.36",
   };
 
-  // 1. Read the edited file and pull out the game object
-  const file = JSON.parse(fs.readFileSync("state.json", "utf8"));
+  // 1. Read the edited save file.
+  const file = JSON.parse(
+    fs.readFileSync("state.json", "utf8")
+  );
+
+  if (!file.game) {
+    throw new Error("state.json does not contain a game object");
+  }
+
   const game = file.game;
-  fs.copyFileSync("state.json", "state.prev.json"); // keep your edited copy
 
-  // 2. Get the server's current updatedAt to use as base
+  // Preserve the edited file before making changes.
+  fs.copyFileSync("state.json", "state.prev.json");
+
+  // 2. Retrieve the current server state.
   const getRes = await fetch(URL_SAVE, { headers });
-  if (!getRes.ok) throw new Error(`GET failed: ${getRes.status}`);
-  const current = await getRes.json();
+  const getText = await getRes.text();
 
-  // 3. PUT { game, base }
+  if (!getRes.ok) {
+    throw new Error(
+      `GET failed: ${getRes.status} ${getText}`
+    );
+  }
+
+  let current;
+
+  try {
+    current = JSON.parse(getText);
+  } catch {
+    throw new Error("GET returned invalid JSON: " + getText);
+  }
+
+  if (current.updatedAt == null) {
+    throw new Error("Server response does not contain updatedAt");
+  }
+
+  // 3. Submit the edited game object.
   const putRes = await fetch(URL_SAVE, {
     method: "PUT",
     headers,
-    body: JSON.stringify({ game, base: current.updatedAt }),
+    body: JSON.stringify({
+      game,
+      base: current.updatedAt,
+    }),
   });
-  const putText = await putRes.text();
-  if (!putRes.ok) throw new Error(`PUT failed: ${putRes.status} ${putText}`);
-  console.log("Saved:", putRes.status, putText.slice(0, 200));
 
-  // 4. GET again and write what the server now holds to state.json
+  // Read the response body exactly once.
+  const putText = await putRes.text();
+
+  if (!putRes.ok) {
+    console.error("❌ PUT failed");
+    console.error("HTTP status:", putRes.status);
+    console.error("Server response:", putText);
+
+    throw new Error(
+      `PUT failed with HTTP ${putRes.status}`
+    );
+  }
+
+  console.log("✅ PUT request accepted:", putRes.status);
+  console.log("Server response:", putText.slice(0, 500));
+
+  // 4. Verify the resulting server state.
   const verifyRes = await fetch(URL_SAVE, { headers });
-  if (!verifyRes.ok) throw new Error(`Verify GET failed: ${verifyRes.status}`);
-  const newState = await verifyRes.json();
-  fs.writeFileSync("state.json", JSON.stringify(newState, null, 2));
-  console.log("updated state");
-})().catch(console.error);
+  const verifyText = await verifyRes.text();
+
+  if (!verifyRes.ok) {
+    throw new Error(
+      `Verify GET failed: ${verifyRes.status} ${verifyText}`
+    );
+  }
+
+  let newState;
+
+  try {
+    newState = JSON.parse(verifyText);
+  } catch {
+    throw new Error("Verification returned invalid JSON");
+  }
+
+  fs.writeFileSync(
+    "state.json",
+    JSON.stringify(newState, null, 2)
+  );
+
+  console.log("✅ Verification successful.");
+  console.log("Updated state.json with the server's current save.");
+})().catch(err => {
+  console.error("❌ Error:", err.message);
+  process.exitCode = 1;
+});
